@@ -1,0 +1,7 @@
+.view{
+    width: 300px;
+    height: 100px;
+    border:2px solid;
+    background: white;
+    color: blue;
+}
