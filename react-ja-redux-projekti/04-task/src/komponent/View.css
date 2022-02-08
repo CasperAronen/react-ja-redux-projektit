@@ -1,7 +1,12 @@
-.view{
-    width: 300px;
-    height: 100px;
-    border:2px solid;
-    background: white;
-    color: blue;
+.tausta-f{
+    width: 996px;
+    height: 220px;
+    border: 2px solid #35598C;
+    margin-top: 2rem;
+    background-color: white;
+    color: #35598C;
+}
+.form-label{
+    display: inline-block;
+    width: 10rem;
 }

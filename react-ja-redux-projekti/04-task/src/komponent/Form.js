@@ -1,29 +1,36 @@
 import './Form.css';
 import View from './View';
+import React, {useState} from "react";
 
 const Form =()=> {
+    const [firstName, setFirstName] = useState();
+    const [lastName, setLastName] = useState();
+    const [Phone, setPhone] = useState();
+    const [message, setMessage] = useState();
   return (
-    <section className="Form">
+    <section className="Form tausta">
+    <h2>Fill the Form</h2>
     <from>
-        <div className="mb-3">
-            <label for="EtuNimi" className="form-label">Etu nimi</label>
-            <input className="form-control" aria-describedby="EtuNimi" id="EtuNimi" type="text" />
+    <div className="mb-3">
+            <label for="fistName" className="form-label">Etunimi: </label>
+            <input className="form-control" aria-describedby="eNimi" id="eNimi" type="text" name="firsname" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
         </div>
         <div className="mb-3">
-            <label for="SukuNimi" className="form-label">Suku Nimi</label>
-            <input className="form-control" aria-describedby="SukuNimi" id="SukuNimi" type="text" />
+            <label for="lastName" className="form-label">Sukunimi: </label>
+            <input className="form-control" aria-describedby="sNimi" id="sNimi" type="text" name="lastname" value={lastName} onChange={(e) => setLastName(e.target.value)} />
         </div>
         <div className="mb-3">
-            <label for="Numero" className="form-label">Numero</label>
-            <input className="form-control" aria-describedby="Numero" id="Numero" type="text" />
+            <label for="phone" className="form-label">Puhelin: </label>
+            <input className="form-control" aria-describedby="puh" id="puh" type="text" name='phone' value={Phone} onChange={(e) => setPhone(e.target.value)}/>
         </div>
         <div className="mb-3">
-            <label for="Viesti" className="form-label">Viesti</label>
-            <input className="form-control" aria-describedby="Viesti" id="Viesti" type="text" />
+            <label for="message" className="form-label">viesti: </label>
+            <input className="form-control" aria-describedby="msg" id="msg" type="text" name='message' value={message} onChange={(e) => setMessage(e.target.value)} />
         </div>
-    
+
+
     </from>
-    <View />
+    <View firstName={firstName} lastName={lastName} Phone={Phone} message={message}  />
     </section>
   );
 }
