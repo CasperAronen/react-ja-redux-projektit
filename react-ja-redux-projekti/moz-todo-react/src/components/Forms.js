@@ -1,20 +1,20 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-const Form=(props)=> {
-    const [name, setName]=useState('')
+const Form = (props) => {
+    const [name, setName] = useState('');
 
-    const handleSubmit =(e)=>{
+    const handleSubmit = (e) => {
         e.preventDefault();
         props.addTask(name);
         setName("");
     }
+    
+    const handleChange = (e) => {
+        setName(e.target.value);
+    }
 
-   const handleChange=(e)=>{
-        setName(e.target.value)
-   }
-
-  return (
-    <form onSubmit={handleSubmit}>
+    return(
+        <form onSubmit={handleSubmit}>
       <h2 className="label-wrapper">
         <label htmlFor="new-todo-input" className="label__lg">
           What needs to be done?
@@ -33,10 +33,7 @@ const Form=(props)=> {
         Add
       </button>
     </form>
-  );
+    );
 }
-
-
-
 
 export default Form;
