@@ -1,0 +1,16 @@
+Button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-left: 14px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+Button:active{
+    border: 2px solid blue;
+}
+
+p{
+    margin: 5px;
+}
