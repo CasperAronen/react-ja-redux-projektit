@@ -10,6 +10,7 @@ const Button =(props)=>{
    
     return (
         <div className="Button">
+        <p>Mietä mieltä olet palveluistamme</p>
         <button onClick={() => setFirstNumber(firstNumber + 1)}>Hyvää</button>
         <button onClick={() => setSecondNumber(secondNumber + 1)}>Kohtalaista</button>
         <button onClick={() => setThirdNumber(thirdNumber + 1)}>Huonoa</button>
