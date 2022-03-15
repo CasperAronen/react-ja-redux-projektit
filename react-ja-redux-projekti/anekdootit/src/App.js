@@ -1,8 +1,9 @@
 import './App.css';
 import react, {useState} from "react"
+
 var lkm =0;
 export default function App(){   
-      const [state, setState] = useState(0) 
+      const [count, setCount] = useState(0) 
   
       const anekdootit =[ 
       'If it hurts, do it more often.',
@@ -15,18 +16,18 @@ export default function App(){
       ];
    
      function lisaa(){
-      lkm++;
-       if (lkm === anekdootit.length -1){
-       lkm=0
+           
+            {
        }
      }
+    
 
   // const random = anekdootit[Math.floor(Math.random() * anekdootit.length)];
 
   return (
     <div className="App">
-   <p>{anekdootit[lkm]} {lkm}</p>
-   <button onClick ={()=> setState(lisaa)} >random anekdootti</button>
+   <p>{anekdootit[count]} {count}</p>
+   <button onClick ={()=> setCount(count +1)} >random anekdootti</button>
     </div>
   
   );
