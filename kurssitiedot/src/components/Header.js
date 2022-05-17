@@ -4,7 +4,7 @@ const Header = ( {course} )  => {
     console.log(course)
     return(
         <div>
-        <p>Toimii Header</p>
+        <p className = "posa">Toimii Header</p>
         <Content course={course}/>
         </div>
     )

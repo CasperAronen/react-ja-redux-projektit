@@ -7,8 +7,8 @@ const Content = ({course} ) => {
         <div>
         <h1>{course.name}</h1>
         <hr></hr>
-            <p>Content toimii</p>
-            <hr></hr>
+            <p className = "posa">Content toimii</p>
+           
             <Part course={course}/>
             <hr></hr>
         </div>

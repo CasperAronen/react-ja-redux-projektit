@@ -5,10 +5,9 @@ import './App.css';
 
 
 const App = () => {
-  const course = {
+  const course = [{
     id: 1,
     name: 'Half Stack application development',
-    
     parts: [
       {
         name: 'Fundamentals of React',
@@ -24,14 +23,39 @@ const App = () => {
         name: 'State of a component',
         exercises: 14,
         id:3
+      },
+      {
+        name: 'Tuleeko uusi kohta näkyviin',
+        exercises: 10,
+        id:4
       }
     ]
-  }
+  },
+  {
+    id: 2,
+    name: "Node.js",
+    parts: [
+      {
+        name: "routing",
+        id: 1,
+        exercises: 3
+      },
+      {
+        name: "midlewares",
+        id: 2,
+        exercises: 7
+      }
+    ]
+   }
+  ]
+
+  
   return (
     <div>
     <h1>react App selaimessa</h1>
-      <Course course={course} />
-      <Total course={course}/>
+    {course.map((course) =>(
+      <Course key={course.id} course={course} />
+    ))}
     </div>
   );
 }

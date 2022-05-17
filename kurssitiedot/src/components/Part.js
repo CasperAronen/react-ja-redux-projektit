@@ -1,16 +1,15 @@
-import App from '../App'
-
 const Part = ( {course }) =>{
-    course.parts.map(parts =>{
-        console.log(parts)
-    })
-const Name = ({course}) =>{
-    course.parts.map(name =>{
-        console.log(name)
-    })
-} 
     return(
-        <p>{course.parts.nae} Part toimii</p>
+        <div>
+        {course.parts.map(part=>
+            <div>
+            <hr></hr>
+            <p className = "posa">Part toimii</p>
+            <label>{part.name} {part.exercises}</label>
+            
+            </div>
+        )}
+      </div>
     )
 }
 

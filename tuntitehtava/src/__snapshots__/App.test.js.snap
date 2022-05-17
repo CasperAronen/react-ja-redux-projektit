@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot kokeilu`] = `
+<DocumentFragment>
+  <div>
+    <p>
+      Olet lisänny 0
+    </p>
+    <p>
+      Olet vähentänyt 0
+    </p>
+    <p>
+      Yhteensä 0
+    </p>
+    <button>
+      lisää
+    </button>
+    <button>
+      vähennä
+    </button>
+    <button>
+      Nollaa
+    </button>
+    <button>
+      Nollaa
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`snapshot kokeilu 1`] = `
+<DocumentFragment>
+  <div>
+    <p>
+      Olet lisänny 0
+    </p>
+    <p>
+      Olet vähentänyt 0
+    </p>
+    <p>
+      Yhteensä 0
+    </p>
+    <button>
+      lisää
+    </button>
+    <button>
+      vähennä
+    </button>
+    <button>
+      Nollaa
+    </button>
+    <button>
+      Nollaa
+    </button>
+  </div>
+</DocumentFragment>
+`;
